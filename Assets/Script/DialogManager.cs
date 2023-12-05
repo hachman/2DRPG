@@ -10,6 +10,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Text dialogText;
 
     [SerializeField] int lettersPerSecond;
+    
     public event Action OnShowDialog;
     public event Action OnHideDialog;
     public static DialogManager Instance { get; private set; }
@@ -34,10 +35,10 @@ public class DialogManager : MonoBehaviour
     }
     public void HandleUpdate()
     {
-        if (Input.GetKeyUp(KeyCode.Z) && !isTyping)
+        if (Input.GetKeyDown(KeyCode.Z) && !isTyping)
         {
             ++currentLine;
-            if(currentLine < dialog.Lines.Count)
+            if (currentLine < dialog.Lines.Count)
             {
                 StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
             }
@@ -48,6 +49,7 @@ public class DialogManager : MonoBehaviour
                 OnHideDialog?.Invoke();
             }
         }
+        
     }
 
     public IEnumerator TypeDialog(string line)
@@ -59,6 +61,7 @@ public class DialogManager : MonoBehaviour
             dialogText.text += letter;
             yield return new WaitForSeconds(1f / lettersPerSecond);
         }
+        isTyping = false;
         
     }
 }
