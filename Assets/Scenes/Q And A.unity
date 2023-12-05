@@ -193,27 +193,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: What Are the topic will you will see in the game
+  - Question: You must set the equation equal to zero before factoring. then set
+      the individual factors equal to zero and solve  x^2 - 27 = 6x
     Answer:
-    - Quadratic Function,Quadratic Equation, Rational Algebraic Equation
-    - x= 8 / x= -4
+    - x= 9 / x= -3
     - x= 9 / x= -4
-    - x= 7 / x= -3
+    - x= 10 / x= -3
+    - x= 23 / x= -3
     CorrectAnswer: 0
-  - Question: what do i dc
+  - Question: what is true in this quadratic equation
     Answer:
-    - -88
-    - -40
-    - 40
-    - 88
+    - x5 + 31 = 1
+    - x2 + x - 30 = 0
+    - both of them is false
+    - both of them is true
+    CorrectAnswer: 1
+  - Question: Who is the founder of quadratic equation
+    Answer:
+    - Simon Stevin
+    - Rene Descartes
+    - Lodovico ferrari
+    - Muhammad ibn Musa al-khwarizmi
     CorrectAnswer: 2
-  - Question: why am i here?
-    Answer:
-    - stupid
-    - bullshit
-    - shiteru
-    - x
-    CorrectAnswer: 3
   options:
   - {fileID: 1389445772}
   - {fileID: 1547806605}

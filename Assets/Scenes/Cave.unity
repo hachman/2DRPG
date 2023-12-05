@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 136135749}
   - component: {fileID: 136135752}
   - component: {fileID: 136135751}
+  - component: {fileID: 136135753}
   m_Layer: 8
   m_Name: NPCQ/A1
   m_TagString: Untagged
@@ -377,10 +378,10 @@ SpriteRenderer:
   m_SortingLayerID: -850711747
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 962905079, guid: 52ea7292d75f1af44a4886fe23319478, type: 3}
+  m_Sprite: {fileID: 847726974, guid: 52ea7292d75f1af44a4886fe23319478, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -397,7 +398,7 @@ Transform:
   m_GameObject: {fileID: 136135748}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.09857343, z: -0, w: 0.99512976}
-  m_LocalPosition: {x: 13.38, y: -6.16, z: 0.13}
+  m_LocalPosition: {x: 12.14, y: -7.16, z: 0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -439,7 +440,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8125, y: 1.375}
+    oldSize: {x: 0.9375, y: 1.375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -475,6 +476,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &136135753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136135748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b9d61a3811f1f419e659db010ebc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - Hello traveller!
+    - let me ask you some question
 --- !u!1 &283414816
 GameObject:
   m_ObjectHideFlags: 0
