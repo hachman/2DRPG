@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -74,6 +75,14 @@ public class PlayerMovement : MonoBehaviour
         isMoving = false;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("open and close");
+            SceneManager.LoadScene("Forest");
+        }
+    }
     private bool IsWalkable(Vector3 targetPos)
     {
         if(Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer | interactableLayer) != null)
